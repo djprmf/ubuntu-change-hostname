@@ -3,9 +3,10 @@ Simple script to change hostname in Ubuntu servers
 
 Nothing fancy. Just a dirty simple script...
 
-wget
+Run as root!
 
-sh hostname
+- wget
+- sh hostname
 
 
 Is that easy!
