@@ -16,6 +16,8 @@ fi
 echo "A alterar hostname de $OLD_HOSTNAME para $NEW_HOSTNAME..."
 
 hostname "$NEW_HOSTNAME"
+hostnamectl set-hostname "$NEW_HOSTNAME"
+
 
 sed -i "s/HOSTNAME=.*/HOSTNAME=$NEW_HOSTNAME/g" /etc/hostname
 sed -i "s/HOSTNAME=.*/HOSTNAME=$NEW_HOSTNAME/g" /etc/mailname
